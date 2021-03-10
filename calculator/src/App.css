@@ -1,0 +1,102 @@
+body {
+  background-color: #ecf0f1;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "display display display display"
+    "clear c divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
+}
+
+.padButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2d3436;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.padButton:hover {
+  opacity: 0.8;
+}
+
+.display {
+  grid-area: display;
+  background-color: black;
+  text-align: right;
+  font-size: 50px;
+}
+
+.expression {
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-right: 10px;
+  text-align: right;
+  width: 98%;
+  background-color: black;
+}
+
+.answer {
+  color: #0076fc;
+  font-size: 25px;
+  border: none;
+  margin: 0;
+  margin-right: 10px;
+  text-align: right;
+  width: 98%;
+  background-color: black;
+}
+
+.equals {
+  grid-area: equals;
+  background-color: #5599ff;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.dark-grey {
+  background-color: #333;
+}
+.red {
+  background-color: tomato;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  margin-top: 70px;
+}
