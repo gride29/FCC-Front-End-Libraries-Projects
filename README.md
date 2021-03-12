@@ -1,4 +1,4 @@
-# Free Code Camp Front End Libraries Projects
+# FreeCodeCamp Front End Libraries Projects
 Front end projects completed to earn the Front End Development Libraries certification.
 
 
